@@ -44,17 +44,17 @@ func ConnDb() {
 	fmt.Print("Successfully Connected")
 }
 
-// Transaction başlatma fonksiyonu
+
 func BeginTransaction() (*sql.Tx, error) {
 	return db.Begin()
 }
 
-// Transaction'ı commit etme fonksiyonu
+
 func CommitTransaction(tx *sql.Tx) error {
 	return tx.Commit()
 }
 
-// Transaction'ı rollback etme fonksiyonu
+
 func RollbackTransaction(tx *sql.Tx) error {
 	return tx.Rollback()
 }
