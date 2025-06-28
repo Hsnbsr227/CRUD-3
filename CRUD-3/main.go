@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	ConnDb() // Burada Veri Bağlantımızı Yapıyoruz
+	ConnDb() 
 
 	for {
 		fmt.Println("\n--- Main Menu ---")
