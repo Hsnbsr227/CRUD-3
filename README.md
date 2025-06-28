@@ -10,7 +10,6 @@ Bu proje, PostgreSQL veritabanı kullanarak temel CRUD (Create, Read, Update, De
 - ✅ Kullanıcı silme (Delete)
 - 🔒 Transaction desteği
 - 🛡️ Güvenli veritabanı bağlantısı
-- 📝 Kullanıcı dostu konsol arayüzü
 
 ## 📋 Gereksinimler
 
@@ -104,16 +103,11 @@ CRUD/
 ├── delete.go        # Kullanıcı silme işlemleri
 ├── .env.example     # Örnek environment değişkenleri
 ├── .gitignore       # Git ignore dosyası
-└── README.md        # Bu dosya
 ```
 
 ## 🔧 Teknik Detaylar
 
 - **Veritabanı:** PostgreSQL
-- **ORM:** Standart database/sql paketi
-- **Transaction Yönetimi:** Manuel transaction kontrolü
-- **Environment:** godotenv ile environment değişkenleri
-- **Hata Yönetimi:** Kapsamlı hata yakalama ve loglama
 
 ## 🛡️ Güvenlik
 
@@ -121,22 +115,3 @@ CRUD/
 - `.env` dosyası `.gitignore` ile korunur
 - Transaction kullanılarak veri tutarlılığı sağlanır
 
-## 🤝 Katkıda Bulunma
-
-1. Bu repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
-
-## 📝 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
-## 👨‍💻 Geliştirici
-
-Bu proje Go öğrenme sürecinde geliştirilmiştir.
-
----
-
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın! 
