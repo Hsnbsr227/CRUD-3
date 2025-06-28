@@ -3,14 +3,14 @@ package main
 import "log"
 
 func DeleteUser(id int) error {
-	// Transaction başlat
+	
 	tx, err := BeginTransaction()
 	if err != nil {
 		log.Printf("Failed to start transaction: %v", err)
 		return err
 	}
 
-	// Hata durumunda rollback yapmak için defer kullan
+	
 	defer func() {
 		if err != nil {
 			RollbackTransaction(tx)
@@ -24,7 +24,7 @@ func DeleteUser(id int) error {
 		return err
 	}
 
-	// Transaction'ı commit et
+	
 	err = CommitTransaction(tx)
 	if err != nil {
 		log.Printf("Failed to commit transaction: %v", err)
